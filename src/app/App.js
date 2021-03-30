@@ -1,13 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import 'app/App.scss';
+
+import Header from 'components/header/header.component';
 
 class App extends React.Component {
 	state = {};
 
 	render () {
 		return (
-			<div className={'App'}></div>
+			<div className={'App'}>
+				<Header />
+			</div>
 		);
 	};
 };

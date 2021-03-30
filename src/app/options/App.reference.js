@@ -3,14 +3,29 @@
 const ref = {
 
 	header: {
-		logo: '',
-		menu: [
-			{ label: 'home'			, redir: 'https://munddi.com/home/'	},
-			{ label: 'nossas marcas', redir: 'https://munddi.com/home/' },
-			{ label: 'nossas lojas'	, redir: 'https://munddi.com/home/' },
-			{ label: 'entrar'		, redir: 'https://munddi.com/home/' },
-			{ label: 'comece agora'	, redir: 'https://munddi.com/home/' },
-		],
+		logo : ''	,
+		menu : {
+			title	: ''		,
+			icon	: 'Menu'	,
+			options	: [
+				{
+					label	: 'home'							,
+					anchor	: 'https://munddi.com/home/'		,
+				},{
+					label	: 'nossas marcas'					,
+					anchor	: 'https://munddi.com/home/'		,
+				},{
+					label	: 'nossas lojas'					,
+					anchor	: 'https://munddi.com/home/'		,
+				},{
+					label	: 'entrar'							,
+					anchor	: 'https://munddi.com/home/'		,
+				},{
+					label	: 'comece agora'					,
+					anchor	: 'https://munddi.com/home/'		,
+				},
+			],
+		},
 	},
 
 	maps: [],

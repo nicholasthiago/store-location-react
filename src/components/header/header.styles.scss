@@ -1,0 +1,49 @@
+@import 'utils/design';
+
+.app-header-wrapper {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	position: fixed;
+	background: #FAFAFA;
+	box-shadow: 0px 4px 8px #00000024;
+
+	.app-header {
+		width: 90%;
+		height: 12vh;
+
+		.component-menu-wrapper {
+			align-items: flex-end;
+
+			.component-menu {
+				.menu-item {
+					color: #565656;
+					font-size: 14px;
+					font-weight: 500;
+					text-transform: uppercase;
+					text-decoration: none; 
+					transition: 0.4s;
+
+					@media (min-width:425px) {
+						&:hover {
+							color: #48c741;
+						}
+
+						&:last-child:hover {
+							transform: translateY(-4px);
+							box-shadow: 0px 4px 8px #00000048;
+						}
+					}
+
+					&:last-child {
+						color: #FAFAFA;
+						margin: 0 0 0 4em;
+						padding: 12px 32px;
+						background: #48c741;
+						border-radius: 32px;
+					}
+				}
+			}
+		}
+	}
+}
