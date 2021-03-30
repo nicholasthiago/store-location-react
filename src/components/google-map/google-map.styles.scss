@@ -1,0 +1,7 @@
+@import 'utils/design';
+
+.app-google-app {
+    @include flex-col;
+    width: 100vw;
+    height: 64vh;
+}
