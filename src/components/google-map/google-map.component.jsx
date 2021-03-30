@@ -14,7 +14,7 @@ class GoogleMap extends React.Component {
 	render_Stores (data) {
 		return (data).map( (s,i) => {
 			return (
-				<Marker lat={Number(s.lat)} lng={Number(s.lng)} key={i} />
+				<Marker data={s} lat={Number(s.lat)} lng={Number(s.lng)} key={i} />
 			);
 		})
 	};

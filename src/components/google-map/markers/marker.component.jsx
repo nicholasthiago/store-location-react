@@ -5,10 +5,16 @@ import './marker.styles.scss';
 class EmptyMarker extends React.Component {
 	state = {};
 
+	handle_Click (data) {
+		let url = `https://www.google.com/maps/search/?api=1&query=${data.lat},${data.lng}`;
+
+		return window.location = url;
+	};
+
 	render_Marker (data) {
 
 		return (
-			<div className={'google-map-marker'}>
+			<div className={'google-map-marker'} onMouseDown={() => this.handle_Click(data)}>
 				<span>
 					{ this.props.children }
 				</span>
