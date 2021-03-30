@@ -8,7 +8,7 @@ class App extends React.Component {
 	state = { data:[], loaded:false };
 
 	async componentDidMount (response) {
-		let urlRequest = 'https://munddi.com/dev/pdvs?ne_lat=-21.79&ne_lng=-44.85&sw_lat=-24.58&sw_lng=-49.18';
+		let urlRequest = 'https://munddi.com/dev/pdvs?ne_lat=10&ne_lng=-30&sw_lat=-30&sw_lng=-70';
 
 		await fetch(urlRequest)
 			.then((resp) => resp.json())

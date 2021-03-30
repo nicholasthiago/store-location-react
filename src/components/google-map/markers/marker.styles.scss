@@ -1,0 +1,26 @@
+@import 'utils/design';
+
+$size1: 12px;
+$size2: 6px;
+$size3: calc(#{size1} / 4);
+$size4: calc(#{size1} / -4);
+
+.google-map-marker {
+    @include hover-cursor;
+    @include flex-col;
+    width:  $size1;
+    height: $size1;
+
+    background: $_green;
+    transform: rotate(-45deg);
+
+    border-radius: 50% 50% 50% 0;
+    border: 2px solid lighten($_green,4%);
+
+    > span {
+        width: $size2;
+        height: $size2;
+        border-radius: 50%;
+        background: lighten($_green,6%);
+    }
+}

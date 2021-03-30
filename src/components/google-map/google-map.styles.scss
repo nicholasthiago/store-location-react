@@ -4,4 +4,10 @@
     @include flex-col;
     width: 100vw;
     height: 64vh;
+
+    .map-test-item {
+        width: 32px !important;
+        height: 32px !important;
+        background: $_blue !important;
+    }
 }
